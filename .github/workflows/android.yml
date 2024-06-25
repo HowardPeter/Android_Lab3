@@ -26,9 +26,11 @@ jobs:
 
     # Thiết lập môi trường Android SDK cho quá trình build
     - name: Set up Android SDK
-      uses: android-actions/setup-android@v3
+      uses: android-actions/setup-android@v2
       with:
-        cmdline-tools-version: 8512546
+        api-level: 31
+        build-tools: '31.0.0'
+        cache: true
         
     # Cấp quyền thực thi cho file gradlew
     - name: Grant execute permission for gradlew

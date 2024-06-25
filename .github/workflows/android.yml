@@ -25,12 +25,8 @@ jobs:
         cache: gradle
 
     # Thiết lập môi trường Android SDK cho quá trình build (Failed vãi l)
-    # - name: Set up Android SDK
-    #   uses: android-actions/setup-android@v3
-    #   with:
-    #     packages: 'tools platform-tools'
-    #     accept-android-sdk-licenses: 'yes'
-    #     cmdline-tools-version: 10406996 
+    - name: Set up Android SDK
+      uses: android-actions/setup-android@v2
 
     # Cấp quyền thực thi cho file gradlew
     - name: Grant execute permission for gradlew

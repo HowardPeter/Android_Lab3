@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnBai1, btnBai3, btnBai4, btnBai5, btnBai6, btnBai7, btnBai8, btnBai9, btnBai10;
+    Button btnBai1, btnBai2, btnBai3, btnBai4, btnBai5, btnBai6, btnBai7, btnBai8, btnBai9, btnBai10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     void addControl()
     {
         btnBai1 = (Button) findViewById(R.id.btnBai1);
+        btnBai2 = (Button) findViewById(R.id.btnBai2);
         btnBai3 = (Button) findViewById(R.id.btnBai3);
         btnBai4 = (Button) findViewById(R.id.btnBai4);
         btnBai5 = (Button) findViewById(R.id.btnBai5);
@@ -47,5 +48,7 @@ public class MainActivity extends AppCompatActivity {
     void addEvent()
     {
         moveToActivity(btnBai1, ActivityLab3Bai1.class);
+        moveToActivity(btnBai2, ActivityLab3Bai2.class);
+        moveToActivity(btnBai3, ActivityLab3Bai3.class);
     }
 }

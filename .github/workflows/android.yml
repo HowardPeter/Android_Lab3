@@ -24,22 +24,14 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
-    # Thiết lập môi trường Android SDK cho quá trình build
+    # Thiết lập môi trường Android SDK cho quá trình build (Failed vãi l)
     # - name: Set up Android SDK
     #   uses: android-actions/setup-android@v3
     #   with:
     #     packages: 'tools platform-tools'
     #     accept-android-sdk-licenses: 'yes'
     #     cmdline-tools-version: 10406996 
-    - name: Check for Android SDK
-      run: |
-        if command -v sdkmanager > /dev/null; then
-          echo "Android SDK is installed."
-        else
-          echo "Android SDK is not installed."
-          exit 1
-        fi
-        
+
     # Cấp quyền thực thi cho file gradlew
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew

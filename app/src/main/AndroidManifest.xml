@@ -12,6 +12,9 @@
         android:theme="@style/Theme.AndroidLab3Exercises"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityLab3Bai1"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

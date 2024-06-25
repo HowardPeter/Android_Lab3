@@ -64,4 +64,18 @@
         android:layout_height="wrap_content"
         android:text="Lab 3 - Bai 8" />
 
+    <Button
+        android:id="@+id/btnBai9"
+        android:layout_width="378dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Lab 3 - Bai 9" />
+
+    <Button
+        android:id="@+id/btnBai10"
+        android:layout_width="378dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Lab 3 - Bai 10" />
+
 </LinearLayout>

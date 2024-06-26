@@ -15,6 +15,9 @@ public class ActivityLab3Bai2 extends AppCompatActivity {
     int[] lsIdImg = new int[]{R.drawable.apple,R.drawable.banana, R.drawable.strawberry, R.drawable.mango,R.drawable.pineapple};
     String[]lsName= new String[]{"Táo","Chuối","Dâu","Xoài","Thơm"};
     int[]lsPrice = new int[]{100,12,80,20,30};
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

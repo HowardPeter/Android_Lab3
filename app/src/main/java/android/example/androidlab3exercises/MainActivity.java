@@ -51,5 +51,6 @@ public class MainActivity extends AppCompatActivity {
         moveToActivity(btnBai2, ActivityLab3Bai2.class);
         moveToActivity(btnBai3, ActivityLab3Bai3.class);
         moveToActivity(btnBai4, ActivityLab3Bai4.class);
+        moveToActivity(btnBai5, ActivityLab3bai5.class);
     }
 }

@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class ActivityLab3Bai3 extends AppCompatActivity {
     RecyclerView rvMovies;
     ArrayList<Movie> arrayListMovie = new ArrayList<>();
-//    AdapterMovie movieAdapter;
+    AdapterMovie movieAdapter;
 
     String[] lsTitle = new String[]{
             "The Shawshank Redemption",
@@ -59,8 +59,8 @@ public class ActivityLab3Bai3 extends AppCompatActivity {
         setContentView(R.layout.activity_lab3_bai3);
 
         rvMovies = (RecyclerView) findViewById(R.id.rVMovies);
-//        arrayListMovie = Movie.initMovie(lsTitle, lsGenre, lsYear);
-//        movieAdapter = new AdapterMovie(arrayListMovie);
+        arrayListMovie = Movie.initMovie(lsTitle, lsGenre, lsYear);
+        movieAdapter = new AdapterMovie(arrayListMovie);
         rvMovies.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, true);

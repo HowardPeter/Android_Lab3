@@ -15,7 +15,7 @@
             android:name=".ActivityLab3bai5"
             android:exported="false" />
         <activity
-            android:name=".ActivityLab3Bai4"
+            android:name=".ActivityLab3Bai4bai8"
             android:exported="false" />
         <activity
             android:name=".ActivityLab3Bai2"

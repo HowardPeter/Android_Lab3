@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ActivityLab3Bai4">
+    tools:context=".ActivityLab3Bai4bai8">
 
     <GridView
         android:id="@+id/gVFruit"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:numColumns="2"
-        android:stretchMode="columnWidth"
-        android:layout_height="match_parent" />
+        android:stretchMode="columnWidth" />
 </LinearLayout>

@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnBai1, btnBai2, btnBai3, btnBai4, btnBai5, btnBai6, btnBai7, btnBai8, btnBai9, btnBai10;
+    Button btnBai1, btnBai2, btnBai3, btnBai4, btnBai5, btnBai6, btnBai7, btnBai9, btnBai10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         btnBai5 = (Button) findViewById(R.id.btnBai5);
         btnBai6 = (Button) findViewById(R.id.btnBai6);
         btnBai7 = (Button) findViewById(R.id.btnBai7);
-        btnBai8 = (Button) findViewById(R.id.btnBai8);
         btnBai9 = (Button) findViewById(R.id.btnBai9);
         btnBai10 = (Button) findViewById(R.id.btnBai10);
     }
@@ -50,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         moveToActivity(btnBai1, ActivityLab3Bai1.class);
         moveToActivity(btnBai2, ActivityLab3Bai2.class);
         moveToActivity(btnBai3, ActivityLab3Bai3.class);
-        moveToActivity(btnBai4, ActivityLab3Bai4.class);
+        moveToActivity(btnBai4, ActivityLab3Bai4bai8.class);
         moveToActivity(btnBai5, ActivityLab3bai5.class);
     }
 }

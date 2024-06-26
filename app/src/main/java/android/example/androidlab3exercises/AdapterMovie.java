@@ -10,9 +10,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class CustomAdapterRecycleViewMovies extends RecyclerView.Adapter<CustomAdapterRecycleViewMovies.MyViewHolder> {
-    ArrayList<Movie> movieArrayList;
-    public CustomAdapterRecycleViewMovies(ArrayList<Movie> movieArrayList) {
+public class AdapterMovie extends RecyclerView.Adapter<AdapterMovie.MyViewHolder> {
+    ArrayList<Movie> movieArrayList = new ArrayList<>();
+
+    public AdapterMovie(ArrayList<Movie> movieArrayList) {
         this.movieArrayList = movieArrayList;
     }
 
@@ -36,14 +37,15 @@ public class CustomAdapterRecycleViewMovies extends RecyclerView.Adapter<CustomA
         return movieArrayList.size();
     }
 
-    class MyViewHolder extends RecyclerView.ViewHolder{
-        TextView tvTitle, tvGenre, tvYear;
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        public TextView tvTitle, tvGenre, tvYear;
+
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             tvTitle = (TextView) itemView.findViewById(R.id.tvTitle);
             tvGenre = (TextView) itemView.findViewById(R.id.tvGenre);
-            tvTitle = (TextView) itemView.findViewById(R.id.tvYear);
+            tvYear = (TextView) itemView.findViewById(R.id.tvYear);
         }
     }
 }

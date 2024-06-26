@@ -38,13 +38,13 @@ public class Movie {
         this.year = year;
     }
 
-//    public static ArrayList<Movie> initMovie(String[] title, String[] genre, String[] year)
-//    {
-//        ArrayList<Movie> arrayList = new ArrayList<>();
-//        for (int i = 0; i < title.length; i++) {
-//            Movie movie = new Movie(title[i], genre[i], year[i]);
-//            arrayList.add(movie);
-//        }
-//        return arrayList;
-//    }
+    public static ArrayList<Movie> initMovie(String[] title, String[] genre, String[] year)
+    {
+        ArrayList<Movie> arrayList = new ArrayList<>();
+        for (int i = 0; i < title.length; i++) {
+            Movie movie = new Movie(title[i], genre[i], year[i]);
+            arrayList.add(movie);
+        }
+        return arrayList;
+    }
 }

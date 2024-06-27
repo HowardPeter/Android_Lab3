@@ -35,10 +35,9 @@ public class ActivityLab3Bai4bai8 extends AppCompatActivity {
         gvFruit.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Object o = gvFruit.getItemAtPosition(position);
-                Fruit fruit = (Fruit) o;
-                Toast.makeText(ActivityLab3Bai4bai8.this, "Selected :" + " " + fruit.getName(), Toast.LENGTH_SHORT).show();
+                adapter.setSelectedPosition(position);
             }
         });
+
     }
 }

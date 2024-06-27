@@ -63,7 +63,7 @@ public class ActivityLab3Bai3 extends AppCompatActivity {
         movieAdapter = new AdapterMovie(arrayListMovie);
         rvMovies.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
 
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, true);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
         rvMovies.setLayoutManager(layoutManager);
         rvMovies.setItemAnimator(new DefaultItemAnimator());
         rvMovies.setAdapter(movieAdapter);

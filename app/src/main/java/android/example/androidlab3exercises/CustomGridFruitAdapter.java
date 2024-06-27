@@ -1,6 +1,7 @@
 package android.example.androidlab3exercises;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +18,7 @@ public class CustomGridFruitAdapter extends BaseAdapter {
     ArrayList<Fruit> arrayListFruit = new ArrayList<>();
     LayoutInflater layoutInflater;
     Context context;
-
+    int selectedPosition = -1;
     public CustomGridFruitAdapter(Context context, ArrayList<Fruit> arrayListFruit) {
         this.arrayListFruit = arrayListFruit;
         this.context = context;
@@ -56,7 +57,19 @@ public class CustomGridFruitAdapter extends BaseAdapter {
         holder.fruitNameView.setText(fr.getName());
         holder.priceView.setText(String.valueOf(fr.getPrice()));
         holder.fruitView.setImageResource(fr.getIdImg());
+
+        if (position == selectedPosition) {
+            convertView.setBackgroundColor(Color.rgb(21, 204, 217));
+        } else {
+            convertView.setBackgroundColor(Color.TRANSPARENT);
+        }
+
         return convertView;
+    }
+
+    public void setSelectedPosition(int position) {
+        selectedPosition = position;
+        notifyDataSetChanged();
     }
 
     // Hàm trả về giá trị int

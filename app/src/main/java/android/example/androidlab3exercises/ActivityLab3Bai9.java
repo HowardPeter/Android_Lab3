@@ -2,7 +2,10 @@ package android.example.androidlab3exercises;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 import java.util.ArrayList;
@@ -17,6 +20,16 @@ public class ActivityLab3Bai9 extends AppCompatActivity {
         setContentView(R.layout.activity_lab3_bai9);
         gvProduct = (GridView) findViewById(R.id.gvProduct);
         setUpGrdiView();
+
+        gvProduct.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(ActivityLab3Bai9.this, ProductList.class);
+                Product product = productArrayList.get(position);
+                intent.putExtra("Category", product.getProductCategory());
+                startActivity(intent);
+            }
+        });
     }
     void setUpGrdiView()
     {

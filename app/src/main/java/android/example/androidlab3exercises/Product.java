@@ -1,5 +1,7 @@
 package android.example.androidlab3exercises;
 
+import androidx.annotation.NonNull;
+
 import java.util.ArrayList;
 
 public class Product {
@@ -53,6 +55,12 @@ public class Product {
     }
 
     public Product() {
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return productName + " - " + productPrice + "$";
     }
 
     public static ArrayList<Product> initGridData(int[] idImg, String[] productCategory)

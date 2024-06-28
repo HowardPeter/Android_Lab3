@@ -80,6 +80,7 @@ public class ProductList extends AppCompatActivity {
     ArrayList<Product> getProductsByCategory(String category) {
         ArrayList<Product> selectedProducts = new ArrayList<>();
 
+        // lọc các product theo category
         allProduct = Product.initListViewData(lsIcon, lsCategory, lsName, lsPrice);
         selectedProducts.addAll(allProduct.stream()
                 .filter(product -> product.getProductCategory().equals(category))

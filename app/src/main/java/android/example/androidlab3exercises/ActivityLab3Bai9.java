@@ -19,19 +19,19 @@ public class ActivityLab3Bai9 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab3_bai9);
         gvProduct = (GridView) findViewById(R.id.gvProduct);
-        setUpGrdiView();
+        setUpGridView();
 
         gvProduct.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(ActivityLab3Bai9.this, ProductList.class);
-                Product product = productArrayList.get(position);
+                Product product = (Product) parent.getItemAtPosition(position);
                 intent.putExtra("Category", product.getProductCategory());
                 startActivity(intent);
             }
         });
     }
-    void setUpGrdiView()
+    void setUpGridView()
     {
         int[] icProduct = new int[]{R.drawable.car, R.drawable.mobilephone, R.drawable.computer, R.drawable.estate, R.drawable.home, R.drawable.job, R.drawable.service, R.drawable.movie, R.drawable.education};
         String[] lsCategory = new String[]{"Car & Bikes", "Mobiles & Tablets", "Electronics & Appliances", "Real Estate", "Home & Lifestyle", "Job", "Services", "Entertainment", "Education & Learning"};

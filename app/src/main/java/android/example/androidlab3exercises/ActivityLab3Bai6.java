@@ -98,8 +98,8 @@ public class ActivityLab3Bai6 extends AppCompatActivity {
         });
     }
     void filterProductsByCategory(int category) {
-        lvAdapter.clear();
-        lvAdapter.addAll(allSanPham.stream()
+        lvArrayList.clear();
+        lvArrayList.addAll(allSanPham.stream()
                 .filter(product -> product.getLoaiSp() == category)
                 .collect(Collectors.toList()));
         lvAdapter.notifyDataSetChanged();

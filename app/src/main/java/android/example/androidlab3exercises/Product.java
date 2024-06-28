@@ -8,7 +8,7 @@ public class Product {
     int idImg;
     String productCategory;
     String productName;
-    String productPrice;
+    int productPrice;
 
     public int getIdImg() {
         return idImg;
@@ -34,15 +34,15 @@ public class Product {
         this.productName = productName;
     }
 
-    public String getProductPrice() {
+    public int getProductPrice() {
         return productPrice;
     }
 
-    public void setProductPrice(String productPrice) {
+    public void setProductPrice(int productPrice) {
         this.productPrice = productPrice;
     }
 
-    public Product(int idImg, String productCategory, String productName, String productPrice) {
+    public Product(int idImg, String productCategory, String productName, int productPrice) {
         this.idImg = idImg;
         this.productCategory = productCategory;
         this.productName = productName;
@@ -73,7 +73,7 @@ public class Product {
         return products;
     }
 
-    public static ArrayList<Product> initListViewData(int[] idImg, String[] productCategory, String[] productName, String[] productPrice)
+    public static ArrayList<Product> initListViewData(int[] idImg, String[] productCategory, String[] productName, int[] productPrice)
     {
         ArrayList<Product> products = new ArrayList<>();
         for (int i = 0; i < idImg.length; i++) {

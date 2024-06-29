@@ -55,4 +55,5 @@ public class CustomGridViewProductAdapter extends BaseAdapter {
         ImageView imgProduct;
         TextView tvProductCategory;
     }
+
 }

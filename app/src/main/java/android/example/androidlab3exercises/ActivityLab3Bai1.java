@@ -44,4 +44,5 @@ public class ActivityLab3Bai1 extends AppCompatActivity {
         dataSP.add("Michael Garcia – (CEO)");
         dataSP.add("Robert Johnson – (Professional Staff)");
     }
+
 }
